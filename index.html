@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.btncss.css">
+    <link rel="stylesheet" href="style.card.css">
+
+    <title>Ideal Weight Calculation</title>
+</head>
+
+<body>
+    <h1>the ideal weight</h1>
+
+    <main>
+
+        <div class="Card">
+
+            <header>
+                <img src="assets/DiaMundialdaSaude2021-820x510.jpg" alt="img peso" style="border-radius:100px;">
+
+                <p>Welcome!</p>
+            </header>
+            <h3>an excellent day!</h3>
+        </div>
+
+
+        <form>
+            <p>
+                <input type="text" id="name" placeholder="Nome" required />
+            </p>
+
+            <p>
+                <img src="assets/sexo-masculino.png" alt="Simbolo Masculino" style="height: 15px;">
+                Masculino<input type="radio" name="sexo" id="masculino" required />
+
+                <img src="assets/simbolo-feminino.png" alt="Simbolo Feminino" style="height: 15px;">
+                Feminino <input type="radio" name="sexo" id="feminino" required />
+            </p>
+
+            <p>
+                <input type="number" min="0" step="0.01" id="altura" placeholder="Altura" required />
+            </p>
+
+
+            <div class="box_Btns">
+
+                <input type="submit" value="Calculate" class="btn ">
+                <input type="reset" value="Clear field" class="btn ">
+
+            </div>
+
+        </form>
+
+
+    </main>
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

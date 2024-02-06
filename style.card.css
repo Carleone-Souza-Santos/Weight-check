@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400|Open+Sans:300,400);
+
+/* Estilizando o card */
+h3 {
+  margin-top: 70px;
+  text-shadow: 1px 1px rgb(54, 61, 53);
+  font-family: Dosis;
+}
+
+.Card {
+  background-image: url(assets/Body_Health_-_2019_-__5_dicas_para_emagrecer-1-770x400.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 280px;
+  width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  border: none;
+  border-radius: 2px;
+  padding: 20px;
+  padding-right: calc(20px + 70px);
+  box-shadow: -22px 60px 2px -10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+header:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+header img {
+  float: left;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.Card {
+  -webkit-transform: perspective(1600px) rotateX(50deg) rotateY(0deg)
+    rotateZ(-10deg) translateY(50%) scale(0.9);
+  transform: perspective(1600px) rotateX(50deg) rotateY(0deg) rotateZ(-10deg)
+    translateY(50%) scale(0.9);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: perspective(1600px) rotateX(50deg) rotateY(0deg)
+    rotateZ(-10deg) translateY(50%) scale(0.9);
+  -webkit-transform-origin: left center;
+  transition: all 0.4s ease;
+  -webkit-animation: efect 1.3s ease-in-out infinite;
+  animation: efect 1.3s ease-in-out infinite;
+  border-radius: 20px;
+}
+
+.Card:hover {
+  transform: perspective(1600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    translateY(40%) scale(1);
+  -webkit-transform: perspective(1600px) rotateX(0deg) rotateY(0deg)
+    rotateZ(0deg) translateY(40%) scale(1);
+  box-shadow: -2px 4px 3px -1px rgba(0, 0, 0, 0.6);
+  -webkit-animation: none;
+  animation: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes efect {
+  0% {
+    top: 15px;
+    box-shadow: -22px 60px 2px -10px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    top: 20px;
+    box-shadow: -20px 54px 1px -10px rgba(0, 0, 0, 0.58);
+  }
+  100% {
+    top: 10px;
+    box-shadow: -22px 60px 2px -10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes efect {
+  0% {
+    top: 10px;
+    box-shadow: -22px 60px 2px -10px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    top: 15px;
+    box-shadow: -20px 54px 1px -10px rgba(0, 0, 0, 0.58);
+  }
+  100% {
+    top: 10px;
+    box-shadow: -22px 60px 2px -10px rgba(0, 0, 0, 0.5);
+  }
+}

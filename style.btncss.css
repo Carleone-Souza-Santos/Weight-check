@@ -1,0 +1,20 @@
+/* Estilizando os botões*/
+
+.btn {
+    background: rgb(22, 190, 212);
+    background: linear-gradient(0deg, rgb(22, 190, 212) 0%,rgb(22, 190, 212)100%);
+    border: none; 
+    
+  }
+  .btn:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn:hover {
+    color: aliceblue;
+    box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+  
